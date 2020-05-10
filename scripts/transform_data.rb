@@ -127,7 +127,7 @@ def normalize_size(s)
   return {} unless s.match?(/\d\.\dx\d\.\d/)
 
   width, length = s.split('x')
-  { width: width.to_i, length: length.to_i }
+  { width: width.to_f, length: length.to_f }
 end
 
 def normalize_price(s)
