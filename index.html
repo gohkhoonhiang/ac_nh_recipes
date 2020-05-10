@@ -191,7 +191,8 @@
                         </template>
 
                         <template v-slot:item.size="{ item }">
-                          W: {{ item.size.width }} x L: {{ item.size.length }}
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -227,7 +228,8 @@
                         </template>
 
                         <template v-slot:item.size="{ item }">
-                          W: {{ item.size.width }} x L: {{ item.size.length }}
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -263,7 +265,8 @@
                         </template>
 
                         <template v-slot:item.size="{ item }">
-                          W: {{ item.size.width }} x L: {{ item.size.length }}
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -299,7 +302,8 @@
                         </template>
 
                         <template v-slot:item.size="{ item }">
-                          W: {{ item.size.width }} x L: {{ item.size.length }}
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -335,7 +339,8 @@
                         </template>
 
                         <template v-slot:item.size="{ item }">
-                          W: {{ item.size.width }} x L: {{ item.size.length }}
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -371,7 +376,8 @@
                         </template>
 
                         <template v-slot:item.size="{ item }">
-                          W: {{ item.size.width }} x L: {{ item.size.length }}
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -407,7 +413,8 @@
                         </template>
 
                         <template v-slot:item.size="{ item }">
-                          W: {{ item.size.width }} x L: {{ item.size.length }}
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
