@@ -1,0 +1,169 @@
+'Recipe Name','Image','Materials Needed','Size','Obtained From','Sell Price','Recipe Item'
+'Apple rug','','6x apple','3.0x3.0','Uchi island resident','1,200','false'
+'Apple wall','','20x apple','N/A','Uchi island resident
+
+Message in a bottle','4,000','false'
+'Autumn wall','','10x maple leaf
+5x wood
+5x clump of weeds','N/A','','4,700','false'
+'Backyard lawn','','30x clump of weeds','N/A','Peppy island resident','600','false'
+'Bamboo flooring','','15x bamboo piece','N/A','Cranky island resident','2,400','false'
+'Bamboo wall','','15x bamboo piece','N/A','Cranky island resident','2,400','false'
+'Bamboo-grove wall','','7x young spring bamboo
+3x bamboo shoot','N/A','Balloon','4,300','false'
+'Basement flooring','','10x stone','N/A','Smug island resident','1,500','false'
+'Brown herringbone wall','','15x softwood','N/A','Uchi island resident
+
+Message in a bottle','1,800','false'
+'Bunny Day flooring','','2x earth egg
+2x stone egg
+2x leaf egg
+2x wood egg
+2x sky egg
+2x water egg','N/A','Bunny Day','4,800','false'
+'Bunny Day rug','','1x earth egg
+1x stone egg
+1x leaf egg
+1x wood egg
+1x sky egg
+1x water egg','3.0x3.0','Bunny Day','2,400','false'
+'Bunny Day wall','','2x earth egg
+2x stone egg
+2x leaf egg
+2x wood egg
+2x sky egg
+2x water egg','N/A','Bunny Day','4,800','false'
+'Cabin wall','','15x hardwood','N/A','Peppy island resident','1,800','false'
+'Cherry rug','','6x cherry','3.0x3.0','Peppy island resident','1,200','false'
+'Cherry wall','','20x cherry','N/A','Peppy island resident
+
+Balloon','4,000','false'
+'Cherry-blossom flooring','','10x cherry-blossom petal
+20x clump of weeds','N/A','Balloon','4,400','false'
+'Cherry-blossom-trees wall','','10x cherry-blossom petal
+5x hardwood','N/A','Balloon','4,600','false'
+'Chocolate herringbone wall','','15x softwood','N/A','Smug island resident','1,800','false'
+'Classic-library wall','','10x book','N/A','Normal island resident
+
+Message in a bottle','1,450','false'
+'Colored-leaves flooring','','10x maple leaf
+15x clump of weeds','N/A','','4,300','false'
+'Dark bamboo rug','','6x bamboo piece','3.0x2.0','Cranky island resident','960','false'
+'Dark wooden-mosaic wall','','15x wood','N/A','Uchi island resident','1,800','false'
+'Forest flooring','','1x rare mushroom
+2x round mushroom
+2x skinny mushroom
+2x flat mushroom
+10x clump of weeds','N/A','','35,000','false'
+'Forest wall','','2x elegant mushroom
+2x round mushroom
+2x skinny mushroom
+2x flat mushroom
+10x wood','N/A','','44,000','false'
+'Galaxy flooring','','5x star fragment
+1x large star fragment','N/A','Celeste','7,500','false'
+'Garbage-heap flooring','','2x empty can
+2x boot
+2x old tire','N/A','Fishing up trash','120','false'
+'Garbage-heap wall','','2x empty can
+2x boot
+2x old tire','N/A','Fishing up trash','120','false'
+'Golden flooring','','4x gold nugget','N/A','Smug island resident
+
+Balloon','40,000','false'
+'Golden wall','','4x gold nugget','N/A','Smug island resident','40,000','false'
+'Gold-screen wall','','2x gold nugget
+1x screen wall','N/A','Smug island resident','20,750','false'
+'Honeycomb flooring','','5x wasp nest','N/A','Jock island resident','3,000','false'
+'Honeycomb wall','','6x wasp nest','N/A','Jock island resident','3,600','false'
+'Ice flooring','','1x large snowflake
+8x snowflake','N/A','','8,200','false'
+'Ice wall','','1x large snowflake
+8x snowflake','N/A','','8,200','false'
+'Iceberg flooring','','10x snowflake','N/A','','4,000','false'
+'Iceberg wall','','10x snowflake','N/A','','4,000','false'
+'Jingle wall','','5x red ornament
+5x blue ornament
+5x gold ornament
+5x clay','N/A','','2,500','false'
+'Jungle flooring','','10x clump of weeds
+10x clay','N/A','Jock island resident
+
+Balloon','2,200','false'
+'Jungle wall','','15x clump of weeds
+3x wood
+3x hardwood
+3x softwood','N/A','Jock island resident
+
+Balloon','1,380','false'
+'Light bamboo rug','','6x young spring bamboo','3.0x2.0','Balloon','2,400','false'
+'Lunar surface','','5x star fragment
+1x large star fragment','N/A','Celeste','7,500','false'
+'Manga-library wall','','10x magazine','N/A','Peppy island resident
+
+Message in a bottle','1,050','false'
+'Modern wood wall','','5x wood
+5x softwood
+5x hardwood','N/A','Snooty island resident','1,800','false'
+'Money flooring','','1x bag of 50,000 bells','N/A','Snooty island resident','25,000','false'
+'Mush wall','','1x elegant mushroom
+1x round mushroom
+1x skinny mushroom
+1x flat mushroom','N/A','','21,400','false'
+'Orange rug','','6x orange','3.0x3.0','Lazy island resident','1,200','false'
+'Orange wall','','20x orange','N/A','Lazy island resident
+
+Message in a bottle','4,000','false'
+'Peach rug','','6x peach','3.0x3.0','Normal island resident','1,200','false'
+'Peach wall','','20x peach','N/A','Normal island resident','4,000','false'
+'Pear rug','','6x pear','3.0x3.0','Jock island resident','1,200','false'
+'Pear wall','','20x pear','N/A','Jock island resident','4,000','false'
+'Rustic-stone wall','','5x stone
+5x clay','N/A','Snooty island resident','1,750','false'
+'Sakura-wood flooring','','5x cherry-blossom petal
+10x wood','N/A','Balloon','3,200','false'
+'Sakura-wood wall','','5x cherry-blossom petal
+10x wood','N/A','Balloon','3,200','false'
+'Sandy-beach flooring','','1x sea snail
+1x venus comb
+1x sand dollar
+1x coral
+1x giant clam
+1x cowrie','N/A','Jock island resident','4,120','false'
+'Sci-fi flooring','','5x star fragment
+1x large star fragment','N/A','Celeste','7,500','false'
+'Sci-fi wall','','5x star fragment
+1x large star fragment','N/A','Celeste
+
+Balloon','7,500','false'
+'Shell rug','','3x giant clam','3.0x3.0','Peppy island resident','5,400','false'
+'Ski-slope flooring','','8 snowflake','N/A','','3,200','false'
+'Ski-slope wall','','8 snowflake','N/A','','3,200','false'
+'Snowflake wall','','12 snowflake','N/A','','4,800','false'
+'Stacked-wood wall','','15x hardwood','N/A','Jock island resident','1,800','false'
+'Starry wall','','5x star fragment
+1x large star fragment','N/A','Celeste','7,500','false'
+'Starry-sands flooring','','3x summer shell
+1x sandy-beach flooring','N/A','Message in a bottle','7,720','false'
+'Starry-sky wall','','5 star fragment
+1 large star fragment','N/A','Celeste','7,500','false'
+'Steel flooring','','7x iron nugget','N/A','Smug island resident
+
+Message in a bottle','5,250','false'
+'Steel-frame wall','','8x iron nugget','N/A','Smug island resident
+
+Message in a bottle','6,000','false'
+'Stone wall','','10x stone','N/A','Smug island resident','1,500','false'
+'Tropical Vista','','5x summer shell','N/A','Message in a bottle','6,000','false'
+'Underwater flooring','','3x summer shell
+3x coral','N/A','Message in a bottle','6,600','false'
+'Underwater wall','','3x summer shell
+5x coral','N/A','Message in a bottle','8,600','false'
+'Water flooring','','6x summer shell','N/A','Balloon','7,200','false'
+'Wild-wood wall','','15x wood','N/A','Cranky island resident','1,800','false'
+'Wooden-knot wall','','15x hardwood','N/A','Smug island resident
+
+Message in a bottle','1,800','false'
+'Wooden-mosaic wall','','15x wood','N/A','Normal island resident','1,800','false'
+'Woodland wall','','15x clump of weeds
+9x softwood','N/A','Normal island resident','1,380','false'

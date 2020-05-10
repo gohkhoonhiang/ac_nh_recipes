@@ -1,0 +1,152 @@
+'Recipe Name','Image','Materials Needed','Size','Obtained From','Sell Price','Recipe Item'
+'Acorn pochette','','6x acorn','1.0x1.0','Balloon','2,400','false'
+'Apple dress','','8x apple','1.0x1.0','Island resident','1,600','false'
+'Apple hat','','5x apple','1.0x1.0','Island resident','1,000','false'
+'Apple umbrella','','7x apple','1.0x1.0','Island resident','1,400','false'
+'Armor shoes','','5x iron nugget','1.0x1.0','','3,000','false'
+'Bamboo hat','','10x clump of weeds','1.0x1.0','','200','false'
+'Basket pack','','6x young spring bamboo','1.0x1.0','Balloon','2,400','false'
+'Blue rose crown','','6x blue roses','1.0x1.0','','12,000','false'
+'Bunny Day bag','','1x earth egg
+1x stone egg
+1x leaf egg
+1x wood egg
+1x sky egg
+1x water egg','1.0x1.0','Bunny Day','2,400','false'
+'Bunny Day crown','','1x earth egg
+1x stone egg
+1x leaf egg
+1x wood egg
+1x sky egg
+1x water egg','1.0x1.0','Bunny Day','2,400','false'
+'Cherry-blossom pochette','','6x cherry-blossom petal','1.0x1.0','Balloon during Cherry Blossom Festival','2,400','false'
+'Cherry-blossom umbrella','','7x cherry-blossom petal','1.0x1.0','Balloon during Cherry Blossom Festival','2,800','false'
+'Cherry dress','','8x cherry','1.0x1.0','Message in a bottle','1,600','false'
+'Cherry hat','','5x cherry','1.0x1.0','Island resident','1,000','false'
+'Cherry umbrella','','7x cherry','1.0x1.0','Island resident','1,400','false'
+'Chic mum crown','','3x purple mums
+3x pink mums','1.0x1.0','Island resident','960','false'
+'Chic rose crown','','3x purple roses
+3x black roses','1.0x1.0','','2,880','false'
+'Chic tulip crown','','2x purple tulips
+2x pink tulips
+1x orange tulips','1.0x1.0','','1,440','false'
+'Cool pansy crown','','3x orange pansies
+3x blue pansies','1.0x1.0','Island resident','960','false'
+'Cool hyacinth crown','','4x blue hyacinths
+2x pink hyacinths
+2x orange hyacinths','1.0x1.0','','1,280','false'
+'Cool windflower crown','','3x blue windflowers
+3x pink windflowers','1.0x1.0','Island resident','960','false'
+'Cosmos crown','','2x red cosmos
+2x yellow cosmos
+3x white cosmos','1.0x1.0','Message in a bottle','560','false'
+'Cute lily crown','','2x  red lilies
+2x orange lilies
+2x white lilies','1.0x1.0','Island resident','800','false'
+'Cute rose crown','','3x pink roses
+3x orange roses','1.0x1.0','Message in a bottle','960','false'
+'Dark cosmos crown','','7x black cosmos','1.0x1.0','','3,360','false'
+'Dark lily crown','','6x black lilies','1.0x1.0','','960','false'
+'Dark tulip crown','','5x black tulips','1.0x1.0','','800','false'
+'Earth-egg outfit','','3x earth egg','1.0x1.0','Digging up earth eggs','1200','false'
+'Earth-egg shell','','2x earth egg','1.0x1.0','Digging up earth eggs','800','false'
+'Earth-egg shoes','','2x earth egg','1.0x1.0','Digging up earth eggs','800','false'
+'Egg party dress','','3x earth egg
+3x stone egg
+3x leaf egg
+3x wood egg
+3x sky egg
+3x water egg','1.0x1.0','Unlock recipes for all six Bunny Day egg outfits','7,200','false'
+'Egg party hat','','2x earth egg
+2x stone egg
+2x leaf egg
+2x wood egg
+2x sky egg
+2x water egg','1.0x1.0','Unlock recipes for all six Bunny Day egg outfits','4,800','false'
+'Gold armor','','8x gold nugget','1.0x1.0','Island resident
+
+Message in a bottle','80,000','false'
+'Gold-armor shoes','','4x gold nugget','1.0x1.0','','40,000','false'
+'Gold helmet','','5x gold nugget','1.0x1.0','','50,000','false'
+'Gold rose crown','','6x gold roses','1.0x1.0','','12,000','false'
+'Grass skirt','','7x clump of weeds','1.0x1.0','Island resident','140','false'
+'Green grass skirt','','7x clump of weeds','1.0x1.0','Island resident','140','false'
+'Hyacinth crown','','4x red hyacinths
+2x yellow hyacinths
+2x white hyacinths','1.0x1.0','','640','false'
+'Iron armor','','8x iron nugget','1.0x1.0','','6,000','false'
+'Knight''s helmet','','5x iron nugget','1.0x1.0','Message in a bottle','3,750','false'
+'Knitted-grass backpack','','20x clump of weeds','1.0x1.0','Island resident','400','false'
+'Leaf','','5x clump of weeds','1.0x1.0','Island resident','80','false'
+'Leaf mask','','10x clump of weeds','1.0x1.0','Island resident','200','false'
+'Leaf umbrella','','15x clump of weeds','1.0x1.0','Island resident','300','false'
+'Leaf-egg outfit','','3x leaf egg','1.0x1.0','Gather leaf eggs by shaking trees','1,200','false'
+'Leaf-egg shell','','2x leaf egg','1.0x1.0','Gather leaf eggs by shaking trees','800','false'
+'Leaf-egg shoes','','2x leaf egg','1.0x1.0','Gather leaf eggs by shaking trees','800','false'
+'Lily crown','','2x red lilies
+2x yellow lilies
+2x white lilies','1.0x1.0','','480','false'
+'Log pack','','3x wood
+5x hardwood','1.0x1.0','Balloon','960','false'
+'Lovely cosmos crown','','4x pink cosmos
+3x orange cosmos','1.0x1.0','','1,120','false'
+'Maple-leaf pochette','','6x maple leaf','1.0x1.0','','2400','false'
+'Maple-leaf umbrella','','7x maple leaf','1.0x1.0','','2,800','false'
+'Mum crown','','2x red mums
+2x yellow mums
+2x white mums','1.0x1.0','Island resident','480','false'
+'Mush umbrella','','3x flat mushroom','1.0x1.0','','1,200','false'
+'Orange dress','','8x orange','1.0x1.0','Island resident','1,600','false'
+'Orange hat','','5x orange','1.0x1.0','Island resident','1,000','false'
+'Orange umbrella','','7x orange','1.0x1.0','Island resident','1,400','false'
+'Pansy crown','','2x red pansies
+2x yellow pansies
+2x white pansies','1.0x1.0','Island resident
+
+Message in a bottle','480','false'
+'Peach dress','','8x peach','1.0x1.0','Message in a bottleIsland resident','1,600','false'
+'Peach hat','','5x peach','1.0x1.0','Message in a bottleIsland resident','1,000','false'
+'Peach umbrella','','7x peach','1.0x1.0','Island resident','1,400','false'
+'Pear dress','','8x pear','1.0x1.0','Message in a bottleIsland resident','1,600','false'
+'Pear hat','','5x pear','1.0x1.0','Island resident','1,000','false'
+'Pear umbrella','','7x pear','1.0x1.0','Island resident','1,400','false'
+'Purple hyacinth crown','','6x purple hyacinths','1.0x1.0','','2,880','false'
+'Purple pansy crown','','6x purple pansies','1.0x1.0','Island resident','2,880','false'
+'Purple windflower crown','','6x purple windflowers','1.0x1.0','','2,880','false'
+'Recycled boots','','2x boot','1.0x1.0','Fishing up a boot','40','false'
+'Rose crown','','2x red roses
+2x yellow roses
+2x white roses','1.0x1.0','','480','false'
+'Shellfish pochette','','2x giant clam
+6x summer shell','1.0x1.0','Message in a bottle','10,800','false'
+'Simple mum crown','','6x green mums','1.0x1.0','','2,880','false'
+'Sky-egg outfit','','3x sky egg','1.0x1.0','Shooting down sky eggs','1,200','false'
+'Sky-egg shell','','2x sky egg','1.0x1.0','Shooting down sky eggs','800','false'
+'Sky-egg shoes','','2x sky egg','1.0x1.0','Shooting down sky eggs','800','false'
+'Snowflake pochette','','6x snowflake','1.0x1.0','','2,400','false'
+'Snowperson head','','1x large snowflake
+5x snowflake','1.0x1.0','','7,000','false'
+'Star head','','5x star fragment','1.0x1.0','Celeste','2,500','false'
+'Star pochette','','6x star fragment','1.0x1.0','Celeste','3,000','false'
+'Straw umbrella hat','','10x clump of weeds','1.0x1.0','Island resident
+
+Message in a bottle','200','false'
+'Stone-egg outfit','','3x stone egg','1.0x1.0','Gather stone eggs by hitting rocks','1,200','false'
+'Stone-egg shell','','2x stone egg','1.0x1.0','Gather stone eggs by hitting rocks','800','false'
+'Stone-egg shoes','','2x stone egg','1.0x1.0','Gather stone eggs by hitting rocks','800','false'
+'Traditional straw coat','','8x clump of weeds','1.0x1.0','Message in a bottle','160','false'
+'Tulip crown','','2x red tulips
+2x yellow tulips
+1x white tulips','1.0x1.0','Message in a bottle','400','false'
+'Water-egg outfit','','3x water egg','1.0x1.0','Fishing up water Eggs','1,200','false'
+'Water-egg shell','','2x water egg','1.0x1.0','Fishing up water Eggs','800','false'
+'Water-egg shoes','','2x water egg','1.0x1.0','Fishing up water Eggs','800','false'
+'Windflower crown','','2x red windflowers
+2x orange windflowers
+2x white windflowers','1.0x1.0','Island resident
+
+Message in a bottle','480','false'
+'Wood-egg outfit','','3x wood egg','1.0x1.0','Gather wood eggs by hitting trees with an axe','1,200','false'
+'Wood-egg shell','','2x wood egg','1.0x1.0','Gather wood eggs by hitting trees with an axe','800','false'
+'Wood-egg shoes','','2x wood egg','1.0x1.0','Gather wood eggs by hitting trees with an axe','800','false'

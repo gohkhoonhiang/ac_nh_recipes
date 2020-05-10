@@ -1,0 +1,78 @@
+'Recipe Name','Image','Materials Needed','Size','Obtained From','Sell Price','Recipe Item'
+'Flimsy axe','','x5 tree branch
+x1 stone','1.0x1.0','Tom Nook','200','false'
+'Stone axe','','x1 flimsy axe
+x3 wood','1.0x1.0','Nook Stop (Pretty-Good Tools Recipes)','560','false'
+'Axe','','x1 flimsy axe
+x3 wood
+x1 iron nugget','1.0x1.0','Nook Stop (Pretty-Good Tools Recipes)','625','false'
+'Golden axe','','x1 axe
+x1 gold nugget','1.0x1.0','Break axes 100 times','10,655','false'
+'Flimsy shovel','','x5 hardwood','1.0x1.0','Blathers','200','false'
+'Shovel','','x1 flimsy shovel
+x1 iron nugget','1.0x1.0','Nook Stop (Pretty-Good Tools Recipes)','600','false'
+'Golden shovel','','x1 shovel
+x1 gold nugget','1.0x1.0','Assist Gulliver 30 times','10,675','false'
+'Flimsy fishing rod','','x5 tree branch','1.0x1.0','Tom Nook (first DIY workshop)','100','false'
+'Fishing rod','','x1 flimsy fishing rod
+x1 iron nugget','1.0x1.0','Nook Stop (Pretty-Good Tools Recipes)','600','false'
+'Golden rod','','x1 fishing rod
+x1 gold nugget','1.0x1.0','Complete the fish section of the critterpedia','10,400','false'
+'Flimsy net','','x5 tree branch','1.0x1.0','Tom Nook (first DIY workshop)','100','false'
+'Net','','x1 flimsy net
+x1 iron nugget','1.0x1.0','Nook Stop (Pretty-Good Tools Recipes)','600','false'
+'Golden net','','x1 net
+x1 gold nugget','1.0x1.0','Complete the bug section of the Critterpedia','10,400','false'
+'Flimsy watering can','','x5 softwood','1.0x1.0','Tom Nook','200','false'
+'Watering can','','x1 flimsy watering can
+x1 iron nugget','1.0x1.0','Nook Stop (Pretty-Good Tools Recipes)','600','false'
+'Golden watering can','','x1 watering can
+x1 gold nugget','1.0x1.0','Recipe obtained by Isabelle after attaining a 5-star town rating','10,675','false'
+'Slingshot','','x5 hardwood','1.0x1.0','Timmy','225','false'
+'Golden slingshot','','x1 slingshot
+x1 gold nugget','1.0x1.0','Recipe obtainable from a golden balloon after shooting down 300 balloons','10,300','false'
+'Vaulting pole','','5x softwood','1.0x1.0','Blathers','600','false'
+'Ladder','','x4 wood
+x4 hardwood
+x4 softwood','1.0x1.0','Tom Nook after placing 2nd house plot','1,440','false'
+'Star wand','','x1 large star fragment
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','6,500','false'
+'Bamboo wand','','x6 young spring bamboo
+x3 star fragment','1.0x1.0','Balloon
+Message in a bottle','3,900','false'
+'Mushroom wand','','x3 skinny mushroom
+x3 star fragment','1.0x1.0','Balloon','3,300','false'
+'Cherry-blossom wand','','x3 cherry-blossom petal
+x3 star fragment','1.0x1.0','Balloon','2,700','false'
+'Bunny Day wand','','x1 wobbling Zipper toy
+x3 star fragment','1.0x1.0','Recipe obtained from Zipper during the Bunny Day event','11,100','false'
+'Cosmos wand','','x1 white cosmos
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,580','false'
+'Hyacinth wand','','x1 pink hyacinths
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,660','false'
+'Lily wand','','x1 white lilies
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,580','false'
+'Mums wand','','x1 yellow mums
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,580','false'
+'Pansy Wand','','x1 yellow pansies
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,580','false'
+'Rose wand','','x1 red roses
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,580','false'
+'Tulip wand','','x1 red tulips
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste
+Balloon','1,580','false'
+'Windflower wand','','x1 orange windflowers
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,580','false'
+'Shell wand','','x3 summer shell
+x3 star fragment','1.0x1.0','*','5,100','false'
+'Ice wand','','x1 large snowflake
+x3 star fragment','1.0x1.0','Recipe obtained from Snowboy','6,500','false'
+'Golden wand','','x2 gold nugget
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','20,750','false'
+'Wand','','x2 star fragment','1.0x1.0','Recipe obtained from Celeste','1,000','false'
+'Tree-branch wand','','x5 tree branch
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','1,550','false'
+'Iron wand','','x3 iron nugget
+x3 star fragment','1.0x1.0','Recipe obtained from Celeste','3,750','false'
+'Wedding wand','','x1 wedding flower stand
+x3 star fragment','1.0x1.0','Wedding Season','3,500','false'
