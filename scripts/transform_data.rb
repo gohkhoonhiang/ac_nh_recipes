@@ -79,6 +79,7 @@ def format_rows(rows)
 end
 
 def format_row(row)
+  row["recipe_name"] = normalize_string(row["recipe_name"])
   row["materials_needed"] = normalize_materials(row["materials_needed"])
   row["size"] = normalize_size(row["size"])
   row["sell_price"] = normalize_price(row["sell_price"])
@@ -99,7 +100,7 @@ def normalize(s)
   elsif integer?(s)
     s.to_i
   else
-    normalize_string(s)
+    s
   end
 end
 
