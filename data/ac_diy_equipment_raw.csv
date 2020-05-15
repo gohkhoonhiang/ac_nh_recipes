@@ -105,10 +105,13 @@ Message in a bottle','80,000','false'
 2x white pansies','1.0x1.0','Island resident
 
 Message in a bottle','480','false'
-'Peach dress','','8x peach','1.0x1.0','Message in a bottle,Island resident','1,600','false'
-'Peach hat','','5x peach','1.0x1.0','Message in a bottle,Island resident','1,000','false'
+'Peach dress','','8x peach','1.0x1.0','Message in a bottle
+Island resident','1,600','false'
+'Peach hat','','5x peach','1.0x1.0','Message in a bottle
+Island resident','1,000','false'
 'Peach umbrella','','7x peach','1.0x1.0','Island resident','1,400','false'
-'Pear dress','','8x pear','1.0x1.0','Message in a bottle,Island resident','1,600','false'
+'Pear dress','','8x pear','1.0x1.0','Message in a bottle
+Island resident','1,600','false'
 'Pear hat','','5x pear','1.0x1.0','Island resident','1,000','false'
 'Pear umbrella','','7x pear','1.0x1.0','Island resident','1,400','false'
 'Purple hyacinth crown','','6x purple hyacinths','1.0x1.0','','2,880','false'
