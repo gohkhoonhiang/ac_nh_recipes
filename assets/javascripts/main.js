@@ -439,9 +439,14 @@ var app = new Vue({
 
     materials_search: function(new_val, old_val) {
       var vm = this;
-      if (new_val.length > 0) {
-        vm.filterCombinedRecipeData();
-      }
+      vm.filterEquipmentRecipeData();
+      vm.filterHousewaresRecipeData();
+      vm.filterMiscRecipeData();
+      vm.filterOtherRecipeData();
+      vm.filterToolsRecipeData();
+      vm.filterWallMountedRecipeData();
+      vm.filterWallpaperRugFlooringRecipeData();
+      vm.filterCombinedRecipeData();
     },
 
   },
