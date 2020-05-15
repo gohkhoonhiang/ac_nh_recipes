@@ -75,27 +75,43 @@ var app = new Vue({
 
     equipment_recipe_data: [],
     filtered_equipment_recipe_data: [],
+    equipment_row_expanded: [],
+    equipment_row_single_expand: true,
 
     housewares_recipe_data: [],
     filtered_housewares_recipe_data: [],
+    housewares_row_expanded: [],
+    housewares_row_single_expand: true,
 
     misc_recipe_data: [],
     filtered_misc_recipe_data: [],
+    misc_row_expanded: [],
+    misc_row_single_expand: true,
 
     other_recipe_data: [],
     filtered_other_recipe_data: [],
+    other_row_expanded: [],
+    other_row_single_expand: true,
 
     tools_recipe_data: [],
     filtered_tools_recipe_data: [],
+    tools_row_expanded: [],
+    tools_row_single_expand: true,
 
     wall_mounted_recipe_data: [],
     filtered_wall_mounted_recipe_data: [],
+    wall_mounted_row_expanded: [],
+    wall_mounted_row_single_expand: true,
 
     wallpaper_rug_flooring_recipe_data: [],
     filtered_wallpaper_rug_flooring_recipe_data: [],
+    wallpaper_rug_flooring_row_expanded: [],
+    wallpaper_rug_flooring_row_single_expand: true,
 
     combined_recipe_data: [],
     filtered_combined_recipe_data: [],
+    combined_row_expanded: [],
+    combined_row_single_expand: true,
 
     recipe_headers: [
       {
@@ -108,7 +124,6 @@ var app = new Vue({
       { text: 'Type', filterable: false, value: 'type' },
       { text: 'Materials', filterable: false, value: 'materials_needed' },
       { text: 'Size', filterable: false, value: 'size' },
-      { text: 'Obtained From', filterable: false, value: 'obtained_from' },
       { text: 'Sell Price', filterable: false, value: 'sell_price' },
       { text: 'Actions', filterable: false, value: 'actions' },
     ],
