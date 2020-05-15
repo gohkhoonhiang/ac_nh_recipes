@@ -33,8 +33,12 @@ def convert_html_to_csv(input, output)
 
   doc.xpath('//table/tbody/tr').each do |row|
     tarray = []
-    row.xpath('td').each do |cell|
-      tarray << cell.text.strip
+    row.xpath('td').each_with_index do |cell, index|
+      if index == 4 && /\/a\>\<a/.match?(cell.to_s)
+        tarray << cell.xpath('a').map { |link| link.text.strip }.join(',')
+      else
+        tarray << cell.text.strip
+      end
     end
     tarray << 'false' if tarray.size == 6
     csv << tarray
