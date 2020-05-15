@@ -35,7 +35,7 @@ def convert_html_to_csv(input, output)
     tarray = []
     row.xpath('td').each_with_index do |cell, index|
       if index == 4 && /\/a\>\<a/.match?(cell.to_s)
-        tarray << cell.xpath('a').map { |link| link.text.strip }.join(',')
+        tarray << cell.xpath('a').map { |link| link.text.strip }.join("\n")
       else
         tarray << cell.text.strip
       end
@@ -154,5 +154,5 @@ end
 def normalize_obtained_from(s)
   return [] if s.nil? || s.empty?
 
-  s.gsub(/\n\n/, ",").split(",");
+  s.gsub(/\n\n/, "\n").split("\n");
 end
