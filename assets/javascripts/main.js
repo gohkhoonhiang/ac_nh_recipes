@@ -26,6 +26,18 @@ var filterList = function(data, filter_options) {
   });
 };
 
+var distinctMaterials = function(data) {
+  var all_materials = data.reduce(function(acc, e) {
+    var materials = e.materials_needed.map(m => m.item).filter(m => m.length > 0);
+    return acc.concat(materials);
+  }, []);
+  return Array.from(new Set(all_materials));
+};
+
+var distinctList = function(data) {
+  return Array.from(new Set(data)).sort();
+};
+
 var app = new Vue({
   el: '#app',
   vuetify: new Vuetify({
@@ -58,6 +70,8 @@ var app = new Vue({
     tab: null,
 
     recipe_search: '',
+    materials_search: [],
+    recipe_materials: [],
 
     equipment_recipe_data: [],
     filtered_equipment_recipe_data: [],
@@ -117,6 +131,9 @@ var app = new Vue({
 
         vm.equipment_recipe_data = formatted_data;
         vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.equipment_recipe_data);
+
+        var equipment_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(equipment_materials.concat(vm.recipe_materials));
       });
     },
 
@@ -135,6 +152,9 @@ var app = new Vue({
 
         vm.housewares_recipe_data = formatted_data;
         vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.housewares_recipe_data);
+
+        var housewares_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(housewares_materials.concat(vm.recipe_materials));
       });
     },
 
@@ -153,6 +173,9 @@ var app = new Vue({
 
         vm.misc_recipe_data = formatted_data;
         vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.misc_recipe_data);
+
+        var misc_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(misc_materials.concat(vm.recipe_materials));
       });
     },
 
@@ -171,6 +194,9 @@ var app = new Vue({
 
         vm.other_recipe_data = formatted_data;
         vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.other_recipe_data);
+
+        var other_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(other_materials.concat(vm.recipe_materials));
       });
     },
 
@@ -189,6 +215,9 @@ var app = new Vue({
 
         vm.tools_recipe_data = formatted_data;
         vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.tools_recipe_data);
+
+        var tools_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(tools_materials.concat(vm.recipe_materials));
       });
     },
 
@@ -207,6 +236,9 @@ var app = new Vue({
 
         vm.wall_mounted_recipe_data = formatted_data;
         vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.wall_mounted_recipe_data);
+
+        var wall_mounted_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(wall_mounted_materials.concat(vm.recipe_materials));
       });
     },
 
@@ -225,6 +257,20 @@ var app = new Vue({
 
         vm.wallpaper_rug_flooring_recipe_data = formatted_data;
         vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.wallpaper_rug_flooring_recipe_data);
+
+        var wallpaper_rug_flooring_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(wallpaper_rug_flooring_materials.concat(vm.recipe_materials));
+      });
+    },
+
+    filterByMaterials: function(data) {
+      var vm = this;
+      var search = vm.materials_search;
+      if (search.length === 0) { return data; }
+
+      return data.filter(function(recipe) {
+        var needed = recipe.materials_needed.map(m => m.item);
+        return search.every(s => needed.includes(s));
       });
     },
 
@@ -232,7 +278,8 @@ var app = new Vue({
       var vm = this;
       var filters = [
       ];
-      return filterList(data, filters);
+      var filtered_by_materials = vm.filterByMaterials(data);
+      return filterList(filtered_by_materials, filters);
     },
 
     filterEquipmentRecipeData: function() {
@@ -355,6 +402,13 @@ var app = new Vue({
     },
 
     combined_recipe_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.filterCombinedRecipeData();
+      }
+    },
+
+    materials_search: function(new_val, old_val) {
       var vm = this;
       if (new_val.length > 0) {
         vm.filterCombinedRecipeData();

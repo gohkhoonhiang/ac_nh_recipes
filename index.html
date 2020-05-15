@@ -126,6 +126,32 @@
                         </v-card>
                       </v-col>
 
+                      <v-col
+                        cols="12"
+                        :xl="6"
+                        :lg="6"
+                        :md="6"
+                        :sm="12"
+                        :xs="12"
+                      >
+                        <v-card
+                          color="rgba(255, 255, 255, 0)"
+                          flat
+                        >
+                          <v-card-text>
+                            <v-select
+                              v-model="materials_search"
+                              label="Materials"
+                              :items="recipe_materials"
+                              multiple
+                              chips
+                              deletable-chips
+                              dense
+                            ></v-select>
+                          </v-card-text>
+                        </v-card>
+                      </v-col>
+
                     </v-row>
                   </v-container>
 
