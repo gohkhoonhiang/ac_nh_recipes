@@ -57,9 +57,6 @@ var app = new Vue({
   data: {
     tab: null,
 
-    recipe_group_by_keys: [],
-    recipe_group_by: null,
-
     recipe_search: '',
 
     equipment_recipe_data: [],
@@ -83,6 +80,9 @@ var app = new Vue({
     wallpaper_rug_flooring_recipe_data: [],
     filtered_wallpaper_rug_flooring_recipe_data: [],
 
+    combined_recipe_data: [],
+    filtered_combined_recipe_data: [],
+
     recipe_headers: [
       {
         text: 'Name',
@@ -91,11 +91,11 @@ var app = new Vue({
         filterable: true,
         value: 'recipe_name',
       },
+      { text: 'Type', filterable: false, value: 'type' },
       { text: 'Materials', filterable: false, value: 'materials_needed' },
       { text: 'Size', filterable: false, value: 'size' },
       { text: 'Obtained From', filterable: false, value: 'obtained_from' },
       { text: 'Sell Price', filterable: false, value: 'sell_price' },
-      { text: 'Recipe Item', filterable: false, value: 'recipe_item' },
       { text: 'Actions', filterable: false, value: 'actions' },
     ],
 
@@ -111,10 +111,12 @@ var app = new Vue({
         var recipe_data = JSON.parse(data).data;
         var formatted_data = recipe_data.map(function(row) {
           var updated_row = row;
+          updated_row['type'] = 'equipment';
           return updated_row;
         });
 
         vm.equipment_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.equipment_recipe_data);
       });
     },
 
@@ -127,10 +129,12 @@ var app = new Vue({
         var recipe_data = JSON.parse(data).data;
         var formatted_data = recipe_data.map(function(row) {
           var updated_row = row;
+          updated_row['type'] = 'housewares';
           return updated_row;
         });
 
         vm.housewares_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.housewares_recipe_data);
       });
     },
 
@@ -143,10 +147,12 @@ var app = new Vue({
         var recipe_data = JSON.parse(data).data;
         var formatted_data = recipe_data.map(function(row) {
           var updated_row = row;
+          updated_row['type'] = 'misc';
           return updated_row;
         });
 
         vm.misc_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.misc_recipe_data);
       });
     },
 
@@ -159,10 +165,12 @@ var app = new Vue({
         var recipe_data = JSON.parse(data).data;
         var formatted_data = recipe_data.map(function(row) {
           var updated_row = row;
+          updated_row['type'] = 'other';
           return updated_row;
         });
 
         vm.other_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.other_recipe_data);
       });
     },
 
@@ -175,10 +183,12 @@ var app = new Vue({
         var recipe_data = JSON.parse(data).data;
         var formatted_data = recipe_data.map(function(row) {
           var updated_row = row;
+          updated_row['type'] = 'tools';
           return updated_row;
         });
 
         vm.tools_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.tools_recipe_data);
       });
     },
 
@@ -191,10 +201,12 @@ var app = new Vue({
         var recipe_data = JSON.parse(data).data;
         var formatted_data = recipe_data.map(function(row) {
           var updated_row = row;
+          updated_row['type'] = 'wall_mounted';
           return updated_row;
         });
 
         vm.wall_mounted_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.wall_mounted_recipe_data);
       });
     },
 
@@ -207,10 +219,12 @@ var app = new Vue({
         var recipe_data = JSON.parse(data).data;
         var formatted_data = recipe_data.map(function(row) {
           var updated_row = row;
+          updated_row['type'] = 'wallpaper_rug_flooring';
           return updated_row;
         });
 
         vm.wallpaper_rug_flooring_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.wallpaper_rug_flooring_recipe_data);
       });
     },
 
@@ -256,6 +270,11 @@ var app = new Vue({
       vm.filtered_wallpaper_rug_flooring_recipe_data = vm.filterComplete(vm.wallpaper_rug_flooring_recipe_data);
     },
 
+    filterCombinedRecipeData: function() {
+      var vm = this;
+      vm.filtered_combined_recipe_data = vm.filterComplete(vm.combined_recipe_data);
+    },
+
     clearAllRecipeFilters: function() {
       var vm = this;
       vm.recipe_search = '';
@@ -274,7 +293,6 @@ var app = new Vue({
     storeSettings: function() {
       var vm = this;
       var settings = {
-        recipe_group_by: vm.recipe_group_by,
       };
 
       localStorage.setItem('ac_nh_recipes_settings', JSON.stringify(settings));
@@ -336,9 +354,11 @@ var app = new Vue({
       }
     },
 
-    recipe_group_by: function(new_val, old_val) {
+    combined_recipe_data: function(new_val, old_val) {
       var vm = this;
-      vm.storeSettings();
+      if (new_val.length > 0) {
+        vm.filterCombinedRecipeData();
+      }
     },
 
   },
