@@ -121,6 +121,20 @@ var app = new Vue({
         filterable: true,
         value: 'recipe_name',
       },
+      { text: 'Materials', filterable: false, value: 'materials_needed' },
+      { text: 'Size', filterable: false, value: 'size' },
+      { text: 'Sell Price', filterable: false, value: 'sell_price' },
+      { text: 'Actions', filterable: false, value: 'actions' },
+    ],
+
+    combined_recipe_headers: [
+      {
+        text: 'Name',
+        align: 'start',
+        sortable: true,
+        filterable: true,
+        value: 'recipe_name',
+      },
       { text: 'Type', filterable: false, value: 'type' },
       { text: 'Materials', filterable: false, value: 'materials_needed' },
       { text: 'Size', filterable: false, value: 'size' },
