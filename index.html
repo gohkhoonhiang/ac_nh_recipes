@@ -278,6 +278,22 @@
                           <span v-else>N/A</span>
                         </template>
 
+                        <template v-slot:item.obtained_from="{ item }">
+                          <v-chip-group
+                            v-if="item.obtained_from.length > 0"
+                            column
+                          >
+                            <v-chip
+                              v-for="(src, i) in item.obtained_from"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ src }}
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
                         <template v-slot:item.actions="{ item }">
                         </template>
 
@@ -313,6 +329,22 @@
                         <template v-slot:item.size="{ item }">
                           <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
                           <span v-else>N/A</span>
+                        </template>
+
+                        <template v-slot:item.obtained_from="{ item }">
+                          <v-chip-group
+                            v-if="item.obtained_from.length > 0"
+                            column
+                          >
+                            <v-chip
+                              v-for="(src, i) in item.obtained_from"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ src }}
+                            </v-chip>
+                          </v-chip-group>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -352,6 +384,22 @@
                           <span v-else>N/A</span>
                         </template>
 
+                        <template v-slot:item.obtained_from="{ item }">
+                          <v-chip-group
+                            v-if="item.obtained_from.length > 0"
+                            column
+                          >
+                            <v-chip
+                              v-for="(src, i) in item.obtained_from"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ src }}
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
                         <template v-slot:item.actions="{ item }">
                         </template>
 
@@ -387,6 +435,22 @@
                         <template v-slot:item.size="{ item }">
                           <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
                           <span v-else>N/A</span>
+                        </template>
+
+                        <template v-slot:item.obtained_from="{ item }">
+                          <v-chip-group
+                            v-if="item.obtained_from.length > 0"
+                            column
+                          >
+                            <v-chip
+                              v-for="(src, i) in item.obtained_from"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ src }}
+                            </v-chip>
+                          </v-chip-group>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -426,6 +490,22 @@
                           <span v-else>N/A</span>
                         </template>
 
+                        <template v-slot:item.obtained_from="{ item }">
+                          <v-chip-group
+                            v-if="item.obtained_from.length > 0"
+                            column
+                          >
+                            <v-chip
+                              v-for="(src, i) in item.obtained_from"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ src }}
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
                         <template v-slot:item.actions="{ item }">
                         </template>
 
@@ -461,6 +541,22 @@
                         <template v-slot:item.size="{ item }">
                           <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
                           <span v-else>N/A</span>
+                        </template>
+
+                        <template v-slot:item.obtained_from="{ item }">
+                          <v-chip-group
+                            v-if="item.obtained_from.length > 0"
+                            column
+                          >
+                            <v-chip
+                              v-for="(src, i) in item.obtained_from"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ src }}
+                            </v-chip>
+                          </v-chip-group>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
@@ -499,6 +595,22 @@
                         <template v-slot:item.size="{ item }">
                           <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
                           <span v-else>N/A</span>
+                        </template>
+
+                        <template v-slot:item.obtained_from="{ item }">
+                          <v-chip-group
+                            v-if="item.obtained_from.length > 0"
+                            column
+                          >
+                            <v-chip
+                              v-for="(src, i) in item.obtained_from"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ src }}
+                            </v-chip>
+                          </v-chip-group>
                         </template>
 
                         <template v-slot:item.actions="{ item }">
