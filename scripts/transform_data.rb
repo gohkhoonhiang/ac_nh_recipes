@@ -152,7 +152,7 @@ def normalize_string(s)
 end
 
 def normalize_obtained_from(s)
-  return '' if s.nil? || s.empty?
+  return [] if s.nil? || s.empty?
 
-  s.gsub(/\n\n/, "\n").split("\n");
+  s.gsub(/\n\n/, ",").split(",");
 end
