@@ -83,6 +83,7 @@ def format_row(row)
   row["materials_needed"] = normalize_materials(row["materials_needed"])
   row["size"] = normalize_size(row["size"])
   row["sell_price"] = normalize_price(row["sell_price"])
+  row["obtained_from"] = normalize_obtained_from(row["obtained_from"])
   row.delete("image")
 end
 
@@ -144,4 +145,10 @@ def normalize_string(s)
   tokens = snake_case(s).split('_')
   tokens.first.capitalize!
   tokens.join(' ')
+end
+
+def normalize_obtained_from(s)
+  return '' if s.nil? || s.empty?
+
+  s.gsub(/\n\n/, "\n").split("\n");
 end
