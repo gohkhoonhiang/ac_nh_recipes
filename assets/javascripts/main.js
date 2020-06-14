@@ -148,7 +148,7 @@ var app = new Vue({
     getEquipmentRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/rebekahgkh/ac_nh_recipes/master/data/ac_diy_equipment.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_equipment.json',
         method: 'GET'
       }).then(function (data) {
         var recipe_data = JSON.parse(data).data;
@@ -169,7 +169,7 @@ var app = new Vue({
     getHousewaresRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/rebekahgkh/ac_nh_recipes/master/data/ac_diy_housewares.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_housewares.json',
         method: 'GET'
       }).then(function (data) {
         var recipe_data = JSON.parse(data).data;
@@ -190,7 +190,7 @@ var app = new Vue({
     getMiscRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/rebekahgkh/ac_nh_recipes/master/data/ac_diy_misc.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_misc.json',
         method: 'GET'
       }).then(function (data) {
         var recipe_data = JSON.parse(data).data;
@@ -211,7 +211,7 @@ var app = new Vue({
     getOtherRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/rebekahgkh/ac_nh_recipes/master/data/ac_diy_other.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_other.json',
         method: 'GET'
       }).then(function (data) {
         var recipe_data = JSON.parse(data).data;
@@ -232,7 +232,7 @@ var app = new Vue({
     getToolsRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/rebekahgkh/ac_nh_recipes/master/data/ac_diy_tools.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_tools.json',
         method: 'GET'
       }).then(function (data) {
         var recipe_data = JSON.parse(data).data;
@@ -253,7 +253,7 @@ var app = new Vue({
     getWallMountedRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/rebekahgkh/ac_nh_recipes/master/data/ac_diy_wall_mounted.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_wall_mounted.json',
         method: 'GET'
       }).then(function (data) {
         var recipe_data = JSON.parse(data).data;
@@ -274,7 +274,7 @@ var app = new Vue({
     getWallpaperRugFlooringRecipeData: function() {
       var vm = this;
       $.ajax({
-        url: 'https://raw.githubusercontent.com/rebekahgkh/ac_nh_recipes/master/data/ac_diy_wallpaper_rug_flooring.json',
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_wallpaper_rug_flooring.json',
         method: 'GET'
       }).then(function (data) {
         var recipe_data = JSON.parse(data).data;
