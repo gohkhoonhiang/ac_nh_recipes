@@ -195,6 +195,14 @@
                     Wallpaper, Rug, Flooring
                     <v-icon left>mdi-view-list</v-icon>
                   </v-tab>
+                  <v-tab key="savory_recipe_tab">
+                    Savory
+                    <v-icon left>mdi-view-list</v-icon>
+                  </v-tab>
+                  <v-tab key="sweet_recipe_tab">
+                    Sweet
+                    <v-icon left>mdi-view-list</v-icon>
+                  </v-tab>
                   <v-tab key="combined_recipe_tab">
                     Combined
                     <v-icon left>mdi-view-list</v-icon>
@@ -614,6 +622,140 @@
                         item-key="recipe_name"
                         :single-expand="wallpaper_rug_flooring_row_single_expand"
                         :expanded.sync="wallpaper_rug_flooring_row_expanded"
+                        show-expand
+                      >
+                        <template v-slot:item.materials_needed="{ item }">
+                          <v-chip-group
+                            column
+                          >
+                            <v-chip
+                              v-for="(material, i) in item.materials_needed"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ material.item }} ({{ material.qty }})
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
+                        <template v-slot:item.size="{ item }">
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
+                        </template>
+
+                        <template v-slot:expanded-item="{ headers, item }">
+                          <td :colspan="headers.length">
+                            <v-card
+                              color="rgba(255, 255, 255, 0)"
+                              flat
+                            >
+                              <v-card-title>Obtained from:</v-card-title>
+                              <v-card-text>
+                                <v-chip-group
+                                  v-if="item.obtained_from.length > 0"
+                                  column
+                                >
+                                  <v-chip
+                                    v-for="(src, i) in item.obtained_from"
+                                    :key="i"
+                                    small
+                                    disabled
+                                  >
+                                    {{ src }}
+                                  </v-chip>
+                                </v-chip-group>
+                              </v-card-text>
+                            </v-card>
+                          </td>
+                        </template>
+
+                        <template v-slot:item.actions="{ item }">
+                        </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
+
+                  <v-tab-item key="savory_recipe_tab">
+                    <v-card flat>
+                      <v-data-table
+                        :headers="recipe_headers"
+                        :items="filtered_savory_recipe_data"
+                        :search="recipe_search"
+                        class="elevation-1"
+                        :items-per-page="20"
+                        :footer-props="{ itemsPerPageOptions: [20,50,100] }"
+                        item-key="recipe_name"
+                        :single-expand="savory_row_single_expand"
+                        :expanded.sync="savory_row_expanded"
+                        show-expand
+                      >
+                        <template v-slot:item.materials_needed="{ item }">
+                          <v-chip-group
+                            column
+                          >
+                            <v-chip
+                              v-for="(material, i) in item.materials_needed"
+                              :key="i"
+                              small
+                              disabled
+                            >
+                              {{ material.item }} ({{ material.qty }})
+                            </v-chip>
+                          </v-chip-group>
+                        </template>
+
+                        <template v-slot:item.size="{ item }">
+                          <span v-if="!!item.size.width">W: {{ item.size.width }} x L: {{ item.size.length }}</span>
+                          <span v-else>N/A</span>
+                        </template>
+
+                        <template v-slot:expanded-item="{ headers, item }">
+                          <td :colspan="headers.length">
+                            <v-card
+                              color="rgba(255, 255, 255, 0)"
+                              flat
+                            >
+                              <v-card-title>Obtained from:</v-card-title>
+                              <v-card-text>
+                                <v-chip-group
+                                  v-if="item.obtained_from.length > 0"
+                                  column
+                                >
+                                  <v-chip
+                                    v-for="(src, i) in item.obtained_from"
+                                    :key="i"
+                                    small
+                                    disabled
+                                  >
+                                    {{ src }}
+                                  </v-chip>
+                                </v-chip-group>
+                              </v-card-text>
+                            </v-card>
+                          </td>
+                        </template>
+
+                        <template v-slot:item.actions="{ item }">
+                        </template>
+
+                      </v-data-table>
+                    </v-card>
+                  </v-tab-item>
+
+                  <v-tab-item key="sweet_recipe_tab">
+                    <v-card flat>
+                      <v-data-table
+                        :headers="recipe_headers"
+                        :items="filtered_sweet_recipe_data"
+                        :search="recipe_search"
+                        class="elevation-1"
+                        :items-per-page="20"
+                        :footer-props="{ itemsPerPageOptions: [20,50,100] }"
+                        item-key="recipe_name"
+                        :single-expand="sweet_row_single_expand"
+                        :expanded.sync="sweet_row_expanded"
                         show-expand
                       >
                         <template v-slot:item.materials_needed="{ item }">
