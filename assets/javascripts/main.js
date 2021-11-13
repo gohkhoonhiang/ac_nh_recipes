@@ -64,6 +64,8 @@ var app = new Vue({
     this.getToolsRecipeData();
     this.getWallMountedRecipeData();
     this.getWallpaperRugFlooringRecipeData();
+    this.getSavoryRecipeData();
+    this.getSweetRecipeData();
   },
 
   data: {
@@ -107,6 +109,16 @@ var app = new Vue({
     filtered_wallpaper_rug_flooring_recipe_data: [],
     wallpaper_rug_flooring_row_expanded: [],
     wallpaper_rug_flooring_row_single_expand: true,
+
+    savory_recipe_data: [],
+    filtered_savory_recipe_data: [],
+    savory_row_expanded: [],
+    savory_row_single_expand: true,
+
+    sweet_recipe_data: [],
+    filtered_sweet_recipe_data: [],
+    sweet_row_expanded: [],
+    sweet_row_single_expand: true,
 
     combined_recipe_data: [],
     filtered_combined_recipe_data: [],
@@ -292,6 +304,48 @@ var app = new Vue({
       });
     },
 
+    getSavoryRecipeData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_savory.json',
+        method: 'GET'
+      }).then(function (data) {
+        var recipe_data = JSON.parse(data).data;
+        var formatted_data = recipe_data.map(function(row) {
+          var updated_row = row;
+          updated_row['type'] = 'savory';
+          return updated_row;
+        });
+
+        vm.savory_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.savory_recipe_data);
+
+        var savory_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(savory_materials.concat(vm.recipe_materials));
+      });
+    },
+
+    getSweetRecipeData: function() {
+      var vm = this;
+      $.ajax({
+        url: 'https://raw.githubusercontent.com/gohkhoonhiang/ac_nh_recipes/master/data/ac_diy_sweet.json',
+        method: 'GET'
+      }).then(function (data) {
+        var recipe_data = JSON.parse(data).data;
+        var formatted_data = recipe_data.map(function(row) {
+          var updated_row = row;
+          updated_row['type'] = 'sweet';
+          return updated_row;
+        });
+
+        vm.sweet_recipe_data = formatted_data;
+        vm.combined_recipe_data = vm.combined_recipe_data.concat(vm.sweet_recipe_data);
+
+        var sweet_materials = distinctMaterials(formatted_data);
+        vm.recipe_materials = distinctList(sweet_materials.concat(vm.recipe_materials));
+      });
+    },
+
     filterByMaterials: function(data) {
       var vm = this;
       var search = vm.materials_search;
@@ -344,6 +398,16 @@ var app = new Vue({
     filterWallpaperRugFlooringRecipeData: function() {
       var vm = this;
       vm.filtered_wallpaper_rug_flooring_recipe_data = vm.filterComplete(vm.wallpaper_rug_flooring_recipe_data);
+    },
+
+    filterSavoryRecipeData: function() {
+      var vm = this;
+      vm.filtered_savory_recipe_data = vm.filterComplete(vm.savory_recipe_data);
+    },
+
+    filterSweetRecipeData: function() {
+      var vm = this;
+      vm.filtered_sweet_recipe_data = vm.filterComplete(vm.sweet_recipe_data);
     },
 
     filterCombinedRecipeData: function() {
@@ -430,6 +494,20 @@ var app = new Vue({
       }
     },
 
+    savory_recipe_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.filterSavoryRecipeData();
+      }
+    },
+
+    sweet_recipe_data: function(new_val, old_val) {
+      var vm = this;
+      if (new_val.length > 0) {
+        vm.filterSweetRecipeData();
+      }
+    },
+
     combined_recipe_data: function(new_val, old_val) {
       var vm = this;
       if (new_val.length > 0) {
@@ -447,6 +525,8 @@ var app = new Vue({
       vm.filterWallMountedRecipeData();
       vm.filterWallpaperRugFlooringRecipeData();
       vm.filterCombinedRecipeData();
+      vm.filterSavoryRecipeData();
+      vm.filterSweetRecipeData();
     },
 
   },
